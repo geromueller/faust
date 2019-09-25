@@ -141,6 +141,7 @@ struct global {
     bool gInlineArchSwitch;
 
     bool gDSPStruct;
+    bool gHLSMode;
     bool gLightMode;  // do not generate the entire DSP API (to be used with Emscripten to generate a light DSP module
                       // for JavaScript)
     bool gClang;      // when compiled with clang/clang++, adds specific #pragma for auto-vectorization

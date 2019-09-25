@@ -60,6 +60,11 @@ class CPPCodeContainer : public virtual CodeContainer {
             addIncludeFile("<cmath>");
             addIncludeFile("<algorithm>");
         }
+
+        if (gGlobal->gHLSMode) {
+            addIncludeFile("<ap_int.h>");
+        }
+
     }
 
     virtual ~CPPCodeContainer() {}

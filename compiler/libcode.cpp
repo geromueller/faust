@@ -606,6 +606,10 @@ static bool processCmdline(int argc, const char* argv[])
             gGlobal->gLightMode = true;
             i += 1;
 
+        } else if (isCmd(argv[i], "-hls", "--high-level-synthsis")) {
+            gGlobal->gHLSMode = true;
+            i += 1;
+
         } else if (isCmd(argv[i], "-clang", "--clang")) {
             gGlobal->gClang = true;
             i += 1;

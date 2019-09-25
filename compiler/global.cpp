@@ -140,6 +140,7 @@ global::global() : TABBER(1), gLoopDetector(1024, 400), gStackOverflowDetector(M
     gInlineArchSwitch    = false;
 
     gDSPStruct = false;
+    gHLSMode   = false;
     gLightMode = false;
     gClang     = false;
 

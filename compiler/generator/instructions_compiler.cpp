@@ -900,7 +900,7 @@ ValueInst* InstructionsCompiler::generateVariableStore(Tree sig, ValueInst* exp)
             return InstBuilder::genLoadStructVar(vname);
 
         case kBlock:
-            if (gGlobal->gOneSample || gGlobal->gOneSampleControl) {
+            if (gGlobal->gOneSample || gGlobal->gOneSampleControl || gGlobal->gHLSMode) {
                 if (t->nature() == kInt) {
                     pushComputeBlockMethod(InstBuilder::genStoreArrayStackVar(
                         "icontrol", InstBuilder::genInt32NumInst(fContainer->fInt32ControlNum), exp));
